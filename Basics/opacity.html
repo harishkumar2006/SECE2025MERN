@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Opacity Control</title>
+  <style>
+    .container {
+      text-align: center;
+      margin-top: 50px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Control Image Opacity</h1>
+    <input type="range" id="opacity-slider" min="0" max="100" value="100">
+    <p>Opacity: <span id="opacity-value">100%</span></p>
+    <img id="image" src="image.avif" alt="Sample Image">
+  </div>
+
+  <script>
+    const slider = document.getElementById('opacity-slider');
+    const image = document.getElementById('image');
+    const opacityValue = document.getElementById('opacity-value');
+
+    slider.addEventListener('input', () => {
+      const opacity = slider.value;
+      image.style.opacity = opacity / 100; // Convert to a value between 0 and 1
+      opacityValue.textContent = `${opacity}%`;
+    });
+  </script>
+</body>
+</html>
