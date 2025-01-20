@@ -6,11 +6,13 @@ import Home from './components/FunctionalComponents/home.jsx'
 import About from './components/FunctionalComponents/about.jsx'
 import ClassComponent from './components/ClassComponents/classcompEG.jsx'
 import Gallery from './components/FunctionalComponents/gallery.jsx'
+import Contact from './components/FunctionalComponents/contact.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Home/>
     <About/>
     <ClassComponent/>
     <Gallery/>
+    <Contact/><hr/>
   </StrictMode>
 )

@@ -1,9 +1,10 @@
 function Gallery(){
     return (
         <div>
-            <h3>Thalapathy</h3>
+            <h3>Welcome to Gallery Page</h3>
+            <h2>This is a property text</h2>
         </div>
     )
 }
 
-export default Gallery
+export default Gallery  
