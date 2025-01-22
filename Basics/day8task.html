@@ -7,12 +7,42 @@
 </head>
 <body>
     <div>
-        <h3>Why whitespaces are not getting printed in the paragraph tag?</h3>
+        <h3>
+            Why doesn't the paragraph tag preserve whitespace as it is?
+        </h3>
+        <p>Why Do Consecutive Whitespaces Collapse?
+            In HTML, multiple spaces, tabs, and line breaks are treated as a single space. 
+            This is designed to standardize the rendering of content across different browsers.
+            Default CSS white-space Property:
+            The white-space property in most elements is set to "normal" by default, meaning:
+            Extra spaces are merged into one.
+            Text automatically wraps at the end of a line.
+        </p>
     </div>
     <div>
-        <h3>What is the cost of buying WhatsApp?</h3>
-        <p>WhatsApp was purchased by Facebook (now Meta) in February 2014 for around $19.3 billion. 
-            The platform was originally created by Brian Acton and Jan Koum in February 2009.
+        <h3>How does the function access the event object and the element that triggered it in the following code?
+            function handleInput(event){
+                setText(event.target.value)
+            }
+        </h3>
+        <p>When the handleInput function is called (e.g., through an input field's onChange handler), the browser passes an event object to the function.
+            This event object provides details about the triggered event, such as:
+            The type of event (e.g., change, click).
+            The target property points to the DOM element that fired the event.
+            The value property within event.target represents the current value of the form control that triggered the event.
+        </p>
+    </div>
+    <div>
+        <h3>Create separate signup and login pages, and set them as the initial routes.
+            After successful login, redirect the user to another page.</h3>
+    </div>
+    <div>
+        <h3>Why does the Link component turn into an anchor tag, and className into class, when inspecting the DOM?</h3>
+        <p>The Link component (from libraries like react-router-dom) gets rendered as an anchor tag (<a>) in the DOM through JSX transformations.
+            React internally uses JSX to generate actual HTML elements and map attributes like "to" into "href" in the resulting <a> tag.
+            
+            Regarding the className attribute: React uses "className" in JSX because "class" is a reserved keyword in JavaScript.
+            During the rendering process, React modifies "className" to "class" using DOM APIs such as setAttribute() to ensure valid HTML output.
         </p>
     </div>
 </body>
